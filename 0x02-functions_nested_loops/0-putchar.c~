@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+/**
+*main - Prints _putchar
+*
+*Return: Always o (Success)
+*/
+int main(void)
+{
