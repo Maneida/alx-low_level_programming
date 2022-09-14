@@ -2,7 +2,7 @@
 
 /**
 *main - Prints _putchar
-*Description:Standard libraries are disallowed 
+*Description:Standard libraries are disallowed
 *Return: Always 0 (Success)
 */
 int main(void)
@@ -12,9 +12,10 @@ int main(void)
 
 	while (putchar[i] != "\0")
 	{
-	_putchar9putchar[i]);
-	i++;
+		_putchar9putchar[i]);
+		i++;
 	}
+	_putchar('\n');
 
 	return (0);
 }
