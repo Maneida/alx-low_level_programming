@@ -2,17 +2,12 @@
 #include <stdio.h>
 
 /**
-*main - check the code
-*
-*Return: Always 0.
+* main - check the code
+* reset_to_98 - reset parameter value to 98
+* @n: the parameter to be reset
+* Return: no return
 */
-int main(void)
+void reset_to_98(int *n)
 {
-	int n;
-
-	n = 402;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+	*n = 98;
 }
