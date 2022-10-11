@@ -3,8 +3,12 @@
 
 /**
 *init_dog -  initializes variable of type dog
-*@d
+*@d: struct dog
+*@name: name of dog
+*@age: age of dog
+*@owner: name of dog owner
 *
+*Return: no return
 */
 
 
