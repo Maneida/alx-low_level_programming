@@ -10,19 +10,15 @@
 
 int main(void)
 {
-	int i, num1_1, num1_2, num2_1, num2_2;
+	int num1_1, num1_2, num2_1, num2_2;
 
-	num1_1 = '0';
-	for (i = 0; i < 10; ++i) /* tens of num1 */
+	for (num1_1= '0'; num1_1 <= '9'; ++num1_1) /* tens of num1 */
 	{
-		num1_2 = '0';
-		while (num1_2 <= '9') /* ones of num1 */
+		for (num1_2 = '0'; num1_2 <= '9'; ++num1_2) /* ones of num1 */
 		{
-			num2_1 = num1_1; /* tens of num2 */
-			while (num2_1 <= '9')
+			for (num2_1 = num1_1; num2_1 <= '9'; ++num2_1) /* tens of num2 */
 			{
-				num2_2 = num1_2;
-				while (num2_2 <= '9')
+				for (num2_2 = num1_2 + 1; num2_2 <= '9'; ++num2_2)
 				{
 					putchar(num1_1);
 					putchar(num1_2);
@@ -35,13 +31,10 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-					++num2_2;
 				}
-				++num2_1;
+				num2_2 = '0';
 			}
-			++num1_2;
 		}
-		++num1_1;
 	}
 	putchar('\n');
 
