@@ -21,22 +21,19 @@ int main(void)
 			num2_1 = num1_1; /* tens of num2 */
 			while (num2_1 <= '9')
 			{
-				num2_2 = num1_2 + 1;
+				num2_2 = num1_2;
 				while (num2_2 <= '9')
 				{
-					if (num2_2 != num1_2)
-					{
-						putchar(num1_1);
-						putchar(num1_2);
-						putchar(' ');
+					putchar(num1_1);
+					putchar(num1_2);
+					putchar(' ');
 
-						putchar(num2_1);
-						putchar(num2_2);
-						if (num1_1 != '9' || num1_2 != '8' || num2_1 != '9' || num2_2 != '9')
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					putchar(num2_1);
+					putchar(num2_2);
+					if (num1_1 != '9' || num1_2 != '8' || num2_1 != '9' || num2_2 != '9')
+					{
+						putchar(',');
+						putchar(' ');
 					}
 					++num2_2;
 				}
