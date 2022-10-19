@@ -12,7 +12,7 @@ int main(void)
 {
 	int num1_1, num1_2, num2_1, num2_2;
 
-	for (num1_1= '0'; num1_1 <= '9'; ++num1_1) /* tens of num1 */
+	for (num1_1 = '0'; num1_1 <= '9'; ++num1_1) /* tens of num1 */
 	{
 		for (num1_2 = '0'; num1_2 <= '9'; ++num1_2) /* ones of num1 */
 		{
