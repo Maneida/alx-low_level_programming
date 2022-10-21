@@ -11,7 +11,7 @@ int main(void)
 	char string[] = "_putchar";
 	int i, len;
 
-	len = sizeof(string);
+	len = sizeof(string) / sizeof(char);
 	for (i = 0; i < len; ++i)
 	{
 		_putchar(string[i]);
@@ -20,4 +20,3 @@ int main(void)
 
 	return (0);
 }
-
