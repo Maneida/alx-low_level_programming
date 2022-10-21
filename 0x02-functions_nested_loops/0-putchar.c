@@ -1,20 +1,23 @@
 #include "main.h"
+
 /**
-*main - Prints "putchar" followed by new line
-*Description:Standard libraries are disallowed
-*Return: Always 0 (Success)
-*/
+ * main - prints _putchar followed by new line
+ * Description: standrd libraries disallowed
+ * Return: 0
+ */
+
 int main(void)
 {
-	char putchar[] = 'char c';
-	int i = 0;
+	char string[] = "_putchar";
+	int i, len;
 
-	while (putchar[i] != "\0")
+	len = sizeof(string);
+	for (i = 0; i < len; ++i)
 	{
-		_putchar(putchar[i]);
-		i++;
+		_putchar(string[i]);
 	}
 	_putchar('\n');
 
 	return (0);
 }
+
