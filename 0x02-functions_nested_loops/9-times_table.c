@@ -17,7 +17,8 @@ void times_table(void)
 			if (((row * column) / 10) != 0)
 				_putchar('0' + ((row * column) / 10));
 			else
-				_putchar(' ');
+				if(column != 0)
+					_putchar(' ');
 			_putchar('0' + ((row * column) % 10));
 			if (column != 9)
 			{
