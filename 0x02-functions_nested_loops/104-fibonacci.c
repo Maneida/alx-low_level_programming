@@ -28,7 +28,7 @@ int main(void)
 	a_tail = a % 1000000000;
 	b_head = b / 1000000000;
 	b_tail = b % 1000000000;
-		
+
 	for (; i <= 98; ++i)
 	{
 		overflow = (a_tail + b_tail) / 1000000000;
