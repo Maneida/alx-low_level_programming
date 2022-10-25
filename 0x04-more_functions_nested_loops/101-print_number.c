@@ -11,7 +11,7 @@
 
 void print_number(int n)
 {
-	double div;
+	int div;
 
 	if (n < 0) /* print negative sign for negative numbers */
 	{
