@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_number - prints integer
@@ -9,13 +10,28 @@
 
 void print_number(int n)
 {
-	if (n / 1000 != 0)
-		_putchar('0' + ((n / 1000) % 10));
-	if ((n / 100) != 0)
-		_putchar('0' + ((n / 100) % 10));
-	if ((n / 10) != 0)
-		_putchar('0' + ((n / 10) % 10));
-	if (n != 0)
-		_putchar('0' + (n % 10));
-}
+	int div;
 
+        if (n < 0) /* print negative sign for negative numbers */
+        {
+                n *= -1;
+                _putchar('-');
+        }
+
+        div = 1; /* find biggest divisor by exponents of 10 */
+        while (n / div != 0)
+                div *= 10;
+	printf("%i", div);
+
+        while (div >= 10) /* loop through and print from biggest digit up to tens */
+        {
+                if (n / div != 0)
+                        _putchar('0' + ((n / div) % 10));
+                div /= 10;
+        }
+
+	if (n != 0) /* print digit for ones */
+		_putchar('0' + (n % 10));
+	else
+		_putchar('0');
+}
