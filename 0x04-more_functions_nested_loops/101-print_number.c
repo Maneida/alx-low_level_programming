@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_number - prints integer
@@ -21,7 +20,6 @@ void print_number(int n)
 	div = 1; /* find biggest divisor by exponents of 10 */
 	while (n / div != 0)
 		div *= 10;
-	printf("%i", div);
 
 	while (div >= 10) /* loop through and print from biggest digit up to tens */
 	{
