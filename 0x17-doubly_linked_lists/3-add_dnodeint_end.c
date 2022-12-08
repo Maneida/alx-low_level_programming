@@ -1,5 +1,5 @@
-#include "lists.h"
 #include <stdlib.h>
+#include "lists.h"
 
 /**
  * add_dnodeint_end - add node to end of doubly linked list
