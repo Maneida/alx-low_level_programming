@@ -11,12 +11,12 @@
 
 void print_number(int n)
 {
-	int div;
+	unsigned int div;
 
 	if (n < 0) /* print negative sign for negative numbers */
 	{
-		n *= -1;
 		_putchar('-');
+		n = -n;
 	}
 
 	div = 1; /* find biggest divisor by exponents of 10 */
