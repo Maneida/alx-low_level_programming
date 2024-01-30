@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_listint - prints all elements of a list
+ * print_list - prints all elements of a list
  * @h: list
  * Return: number of nodes
  */
@@ -12,7 +12,7 @@ size_t print_list(const list_t *h)
 
 	while (h != NULL)
 	{
-		printf("%d\n", h->n); /* autofills 0 if no int value given */
+		printf("%d\n", h->len); /* autofills 0 if no int value given */
 
 		num_nodes += 1;
 		h = h->next;
