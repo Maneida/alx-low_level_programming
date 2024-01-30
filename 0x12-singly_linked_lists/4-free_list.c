@@ -3,6 +3,8 @@
 /**
  * free_list - free linked list
  * @head: linked list
+ * 
+ * Return: no return
  */
 
 void free_list(list_t *head)
